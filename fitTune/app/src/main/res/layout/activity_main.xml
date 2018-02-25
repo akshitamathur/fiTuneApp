@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+
+    tools:context="com.example.akshita.fittune.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_steps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:text="Total Steps"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="123dp"
+        android:text="0"
+        android:textSize="40dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:contentDescription="PlaylistImage"
+        app:srcCompat="@drawable/playlist" />
+
+    <TextView
+        android:id="@+id/workoutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="CARDIO CHAMPION CHALLENGE"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Jumpman - Drake feat. Future" />
+
+
+</RelativeLayout>
